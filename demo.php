@@ -38,3 +38,7 @@ fclose($handle);
 // Unisco i dati del fdf al pdf
 $command = "$pdftk $pdf_template_path fill_form $xfdf_file_path output $pdf_name flatten";
 exec( $command, $output, $ret );
+
+echo 'Generato il file ' . $pdf_name ;
+echo "<br>\n";
+echo 'Generato il file ' . $xfdf_file_path ;
